@@ -32,14 +32,14 @@ public class ArrayBehandlung {
         }
     }
 
-    public static long findmaxsum(int[] arr){
-        if (arr ==null || arr.length == 0)
+    public static long findmaxsum(int[] arr) {
+        if (arr == null || arr.length == 0)
             throw new IllegalArgumentException("Array is null or empty");
-        if (arr.length ==1)
+        if (arr.length == 1)
             return 0;
-        long summe =0;
+        long summe = 0;
         int min = arr[0];
-        for (int i: arr){
+        for (int i : arr) {
             summe += i;
             if (i < min)
                 min = i;
@@ -47,14 +47,14 @@ public class ArrayBehandlung {
         return summe - min;
     }
 
-    public static long finminsum(int[] arr){
-        if (arr ==null || arr.length == 0)
+    public static long finminsum(int[] arr) {
+        if (arr == null || arr.length == 0)
             throw new IllegalArgumentException("Array is null or empty");
-        if (arr.length ==1)
+        if (arr.length == 1)
             return 0;
-        long summe =0;
+        long summe = 0;
         int max = arr[0];
-        for (int i: arr){
+        for (int i : arr) {
             summe += i;
             if (i > max)
                 max = i;
